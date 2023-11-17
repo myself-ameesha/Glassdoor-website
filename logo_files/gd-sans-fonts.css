@@ -1,0 +1,48 @@
+/* Glassdoor Sans Initial */
+@font-face {
+  font-family: 'Glassdoor Sans Initial';
+  src: url('https://www.glassdoor.com/assets/fonts/GlassdoorSans-Regular.woff2') format('woff2');
+}
+
+/* Glassdoor Sans */
+/* These fonts are loaded after the intial font for performane reasons */
+
+/* Light Weight isn't currently being used, but this is here if ever needed */
+/* @font-face {
+  font-family: 'Glassdoor Sans';
+  src: url('https: //www.glassdoor.com/assets/fonts/GlassdoorSans-Light.woff2') format('woff2');
+  font-weight: 300;
+} */
+
+@font-face {
+  font-family: 'Glassdoor Sans';
+  src: url('https://www.glassdoor.com/assets/fonts/GlassdoorSans-Regular.woff2') format('woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Glassdoor Sans';
+  src: url('https://www.glassdoor.com/assets/fonts/GlassdoorSans-Semibold.woff2') format('woff2');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Glassdoor Sans';
+  src: url('https://www.glassdoor.com/assets/fonts/GlassdoorSans-Extrabold.woff2') format('woff2');
+  font-weight: 800;
+}
+
+:root {
+  --gd-product-font: 'sans-serif';
+  /* This is depreciated but is being used in UI Kit v1 Retrofit so it needs to continue to exist for now */
+  --gd-product-theme-font: var(--gd-product-font);
+  --gd-product-theme-rebranded-font: var(--gd-product-theme-font);
+}
+
+.fonts-loaded-initial {
+  --gd-product-font: 'Glassdoor Sans Initial', 'sans-serif';
+}
+
+.fonts-loaded-full {
+  --gd-product-font: 'Glassdoor Sans', 'sans-serif';
+}
